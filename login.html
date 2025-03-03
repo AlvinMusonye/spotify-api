@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 flex">
+
+   
+    <div class="menuSide fixed left-0 top-0 w-64 h-screen bg-blue-600 text-white p-5">
+        <nav>
+            <div class="image-text">
+                <h1 class="flex items-center gap-2 text-white text-xl font-bold cursor-pointer mt-5">
+                    <img class="w-10 h-10 rounded-full" src="assets/music logotype.jpeg" alt="Logo">
+                    Alvinjr101
+                </h1>
+            </div>
+            <ul class="cursor-pointer mt-10">
+                <li class="hover:text-gray-300"><i class="bi bi-list"></i> <a href="playlist.html">Playlist</a></li>
+                <li class="mt-6 hover:text-gray-300"><i class="bi bi-plus-square"></i> Add Playlist</li>
+                <li class="mt-6 hover:text-gray-300"><i class="bi bi-heart"></i> Liked Songs</li>
+                <li class="mt-6 hover:text-gray-300"><i class="bi bi-person"></i> Profile</li>
+            </ul>
+        </nav>
+
+       
+        <ul class="absolute bottom-5 left-5 w-50">
+            <li class="flex items-center gap-2 text-white hover:text-gray-300 transition duration-300 border-2 cursor-pointer px-4 py-2">
+                <a href="login.html" class="font-bold">Log In</a>  
+                <i class="bi bi-box-arrow-right"></i>
+            </li>
+        </ul>
+    </div>
+
+    
+    <div class="flex flex-1 items-center justify-center min-h-screen">
+        <div class="bg-gray-100 rounded-2xl shadow-2xl p-8 w-full max-w-lg">
+            <h1 class="font-bold text-2xl text-blue-500 text-center">Login</h1>
+            <p class="text-sm mt-2 text-blue-400 text-center">If you are already a member, log in</p>
+
+            <form id="loginForm" class="flex flex-col gap-4 mt-5">
+                <input class="p-2 border rounded-xl w-full" type="text" id="email" placeholder="Enter Email" required>
+                <div class="relative">
+                    <input class="p-2 border rounded-xl w-full" type="password" id="password" placeholder="Enter Password" required>
+                    <i class="fa-regular fa-eye absolute top-1/4 right-3 cursor-pointer"></i>
+                </div>
+
+                <button type="submit" class="bg-blue-600 rounded-xl py-2 text-white hover:scale-105 duration-300">Login</button>
+                <p class="text-center">Don't have an account? <a href="registration.html" class="underline text-blue-500">Sign up</a></p>
+            </form>
+
+            <div class="mt-5 flex items-center text-gray-400">
+                <hr class="border-gray-400 flex-grow">
+                <p class="text-black font-bold mx-3">OR</p>
+                <hr class="border-gray-400 flex-grow">
+            </div>
+
+            <button class="bg-white border border-blue-400 hover:bg-blue-600 py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300">
+                <i class="fa-brands fa-google mx-2"></i> Login with Google
+            </button>
+
+            <p class="mt-5 text-xs text-center">
+                <a href="#" class="underline">Forgot your password?</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

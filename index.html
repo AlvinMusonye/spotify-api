@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+<header class="bg-black">
+    <div class="menuSide">
+               <nav class="fixed">
+                 <div class="image-text">
+                    <span class="image">
+                        <h1 class="flex items-center gap-2 text-white text-xl font-bold cursor-pointer mt-5">
+                            <img class="w-10 h-10  rounded-full" src="assets/music logotype.jpeg" alt="my logo">
+                            Alvinjr101
+                        </h1>
+                        
+                    </span>
+                 </div>
+                 <ul class="cursor-pointer mt-10 ml-5">
+                    <li class="hover:text-gray-300"><i class="bi bi-list"></i> <a href="playlist.html">Playlist</a></li>
+                    <li class="mt-10 hover:text-gray-300"><a href=""></a><i class="bi bi-plus-square"></i>  Add Playlist </li>
+                    <li class="mt-10 hover:text-gray-300"><a href=""></a> <i class="bi bi-heart"></i> liked Songs</li>
+                    <li class="mt-10 hover:text-gray-300"><a href=""></a> <i class="bi bi-person"></i> profile </li>
+                 </ul>
+                
+               </nav>
+               <ul class="absolute bottom-20 left-10 w-70 items-center">
+                <li class="flex items-center gap-2 text-white hover:text-gray-300 transition duration-300 border-2 cursor-pointer px-4 py-2">
+                    <a href="login.html" class="font-bold">Log In</a>  
+                    <i class="bi bi-box-arrow-right"></i>
+                </li>
+            </ul>
+           
+    </div>
+    <div class="songSide p-5 text-white">
+        <nav class="flex gap-6 b pb-2">
+            <h4 class="cursor-pointer border-b border-blue-500 hover:border-white hover:text-blue-400 transition duration-300"><a href="index.html">Discover</a></h4>
+            <h4 class="cursor-pointer border-b border-blue-500 hover:border-white hover:text-blue-400 transition duration-300">Browse Music</h4>
+            <h4 class="cursor-pointer border-b border-blue-500 hover:border-white hover:text-blue-400 transition duration-300"><a href="radio.html">Radio</a></h4>
+            <div class="search flex items-center border border-gray-500 rounded-md px-3 bg-white w-64 ml-80">
+                <input type="search" id="searchBox" placeholder="Search..." class="search flex-grow outline-none text-gray-700">
+                <i id="searchBtn" class="bi bi-search text-gray-500 cursor-pointer"></i>
+            </div>
+            <img class=" w-10 h-8 ml-16 rounded-full" src="assets/music logotype.jpeg" alt="my logo">
+        </nav> 
+            
+           <div>
+            <ul id="songResults" class="menu_song p-2 space-y-1 overflow-y-auto "></ul>
+           </div> 
+            <audio id="audioPlayer" controls class="hidden"></audio>
+            
+
+
+       <section id="PopularSongs">
+          <h2 class="text-3xl font-bold mb-6">Popular Songs</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
+
+              
+
+            <div class=" card bg-gray-800 text-white p-4  rounded-lg w-48 shadow-lg hover:bg-gray-700 transition">
+              <img src="assets/@slimeedoll.jpeg" alt="Song 1" class="w-54 rounded-lg  ease-out ">
+              <h3 class="text-xl font-semibold mt-4">Nba Youngboy</h3>
+              <p class="text-gray-600 ">Bad Morning</p>
+             
+              <button class=" bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                <a href="">play</a>
+              </button>
+             </div>
+
+             <div class=" card bg-gray-800 text-white p-4  rounded-lg w-48 shadow-lg hover:bg-gray-700 transition">
+                <img src="assets/33 impressive youngboy nba wallpaper music (1).jpeg" alt="Song 1" class="w-54 rounded-lg  ease-out ">
+                <h3 class="text-xl font-semibold mt-4">Nba Youngboy</h3>
+                <p class="text-gray-600 ">No Love</p>
+               
+                <button class=" bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                  <a href="">play</a>
+                </button>
+               </div>
+
+               <div class=" card bg-gray-800 text-white p-4  rounded-lg w-48 shadow-lg hover:bg-gray-700 transition">
+                <img src="assets/The Best Drake Braids (Detailed Look & Gallery).jpeg" alt="Song 1" class="w-54 h-40 rounded-lg  ease-out ">
+                <h3 class="text-xl font-semibold mt-4">Drake</h3>
+                <p class="text-gray-600 ">No Warm</p>
+               
+                <button class=" bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                  <a href="">play</a>
+                </button>
+               </div>
+
+               <div class=" card bg-gray-800 text-white p-4  rounded-lg w-48 shadow-lg hover:bg-gray-700 transition">
+                <img src="assets/J Hus - The O2 Enviornment Reveals Cancelled _ Stay _ howthingsworks_in.jpeg" alt="Song 1" class="w-54 rounded-lg  ease-out ">
+                <h3 class="text-xl font-semibold mt-4">jhus</h3>
+                <p class="text-gray-600 ">No Bad</p>
+               
+                <button class=" bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                  <a href="">play</a>
+                </button>
+               </div> 
+         </section>  
+      
+    </div>
+    
+ 
+    <div class="Masterplayer bg-blue-500 text-white bottom-0 flex flex-col items-center justify-center py-3 shadow-lg w-full">
+      <div class="w-full flex items-center justify-center">
+          <span id="currentTime" class="text-sm">0:00</span>
+          <input type="range" id="progressBar" min="0" value="0" class="mx-4 w-64 cursor-pointer">
+          <span id="totalTime" class="text-sm">0:00</span>
+      </div>
+      
+      <ul class="flex items-center gap-6 text-2xl mt-2">
+          <li class="cursor-pointer hover:text-gray-400 transition duration-300"><i class="bi bi-skip-backward"></i></li>
+          <li class="cursor-pointer hover:text-gray-400 transition duration-300"><i class="bi bi-skip-start"></i></li>
+          <li id="playPauseBtn" class="cursor-pointer hover:text-gray-400 transition duration-300"><i class="bi bi-play-fill"></i></li>
+          <li class="cursor-pointer hover:text-gray-400 transition duration-300"><i class="bi bi-skip-end"></i></li>
+          <li class="cursor-pointer hover:text-gray-400 transition duration-300"><i class="bi bi-skip-forward"></i></li>
+      </ul>
+      
+      <button id="playBtn">Play Music</button>
+      <audio id="audioPlayer" src="youngboy-bad-morning.mp3"></audio>
+      
+  </div>
+  
+       
+</header>
+<script src="script.js"></script>
+</body>
+</html>
